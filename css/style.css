@@ -11,10 +11,11 @@ html {
 body {
     font-size: 2rem;
     font-family: "Montserrat", sans-serif;
+    background: #1B262C;
 }
 
 .nav {
-    width: 100vw;
+    width: 100%;
     background: #0F4C75;
     display: flex;
     justify-content: space-between;
@@ -50,8 +51,8 @@ body {
 }
 
 .banner {
-    height: 80vh;
-    width: 100vw;
+    height: 100vh;
+    width: 100%;
     position: relative;
 }
 
@@ -60,7 +61,7 @@ body {
     width: 100%;
     background: linear-gradient(to bottom right, rgba(27, 38, 44, 0.4), 70%, rgba(50, 130, 184, 0.4)), url("../img/pexels-chaitaastic-2031706.jpg");
     background-position: bottom;
-    object-fit: contain;
+    background-size: cover;
 }
 
 .banner > figure > div {
@@ -91,4 +92,40 @@ body {
     border: 0.5rem solid #BBE1FA;
     border-radius: 50%;
     padding: 1.5rem;
+}
+
+.over {
+    padding: 4rem;
+    height: 80rem;
+}
+
+.over > header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.over > header > h2 {
+    color: #eee;
+    font-family: "Edu QLD Beginner", cursive;
+    font-size: 200%;
+}
+
+.over > div {
+    display: flex;
+    gap: 4rem;
+    justify-content: center;
+    height: 100%;
+}
+
+.over > div > p {
+    width: 55ch;
+    color: #eee;
+}
+
+.over > div > img {
+    width: 40rem;
+    height: 60rem;
+    object-fit: cover;
 }
