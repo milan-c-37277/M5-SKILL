@@ -1,0 +1,94 @@
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%; /* 1rem = 10px */
+}
+
+body {
+    font-size: 2rem;
+    font-family: "Montserrat", sans-serif;
+}
+
+.nav {
+    width: 100vw;
+    background: #0F4C75;
+    display: flex;
+    justify-content: space-between;
+    min-height: 7rem;
+    align-items: center;
+    color: #eee;
+    font-size: 100%;
+    padding: 1rem;
+    text-transform: uppercase;
+}
+
+.list {
+    display: flex;
+    list-style: none;
+    gap: 4rem;
+}
+
+.cta {
+    width: 11rem;
+    padding: 0.5rem;
+    font-size: 70%;
+    background: #3282B8;
+    border: none;
+    color: #eee;
+    border-radius: 0.5rem;
+    text-transform: uppercase;
+}
+
+.cta:hover {
+    cursor: pointer;
+    background: hsl(204, 57%, 36%);
+    transition: 0.2s;
+}
+
+.banner {
+    height: 80vh;
+    width: 100vw;
+    position: relative;
+}
+
+.banner > figure {
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to bottom right, rgba(27, 38, 44, 0.4), 70%, rgba(50, 130, 184, 0.4)), url("../img/pexels-chaitaastic-2031706.jpg");
+    background-position: bottom;
+    object-fit: contain;
+}
+
+.banner > figure > div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    align-items: center;
+    color: #eee;
+}   
+
+.heading {
+    font-family: "Edu QLD Beginner", cursive;
+    font-size: 400%;
+}
+
+.heading2 {
+    font-family: "Edu QLD Beginner", cursive;
+    font-size: 150%;
+}
+
+.logo {
+    font-size: 250%;
+    color: #eee;
+    border: 0.5rem solid #BBE1FA;
+    border-radius: 50%;
+    padding: 1.5rem;
+}
