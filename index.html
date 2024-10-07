@@ -1,52 +1,151 @@
 <!DOCTYPE html>
-<html lang="nl">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src='./js/all.min.js' crossorigin='anonymous'></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
     <link
-        href="https://fonts.googleapis.com/css2?family=Edu+QLD+Beginner:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
-    <script src="js/fontawesome.js"></script>
-    <link rel="stylesheet" href="css/style.css">
-    <title>Tulpreizen</title>
+    <title>car</title>
+
 </head>
 
 <body>
     <nav class="nav">
         <i class="fa-solid fa-seedling logo"></i>
         <ul class="list">
-            <li class="listItem">Over</li>
-            <li class="listItem">Kenmerken</li>
-            <li class="listItem">Galerij</li>
+            <li class="listitem"><a href="#over">over</a> </li>
+            <li class="listitem"><a href="#kenmerk">kenmerken</a> </li>
+            <li class="listitem"><a href="#galerij">galerij</a> </li>
         </ul>
-        <button class="cta">Boek nu!</button>
+        <button class="cta">Koop Nu</button>
     </nav>
     <section class="banner">
         <figure>
             <div>
-                <i class="fa-solid fa-seedling logo"></i>
-                <h1 class="heading">
-                    Tulpreizen
+                <h1 class="heading"><i class="fa-solid fa-seedling logo"></i>
                 </h1>
-                <h2 class="heading2">Bezoek het mooie Nederland!</h2>
-                <button class="cta">Boek nu!</button>
+                <h2 class="heading2">Tulpreizen</h2>
+                <h2 class="heading2"></h2>
+
+                <button class="cta">Boek nu</button>
             </div>
         </figure>
     </section>
     <section class="over">
-        <header><h2>Over Tulpreizen</h2></header>
+        <header id="over">
+
+            <h2>Over Tulpreizen</h2>
+
+        </header>
         <div>
-            <p>
-                Tulpreizen is een familiebedrijf gespecialiseerd in het organiseren van reizen door Nederland. Denk aan een
-                mooie wandelvakantie, een coltuurtrip of een weekendje weg met vrienden. Altijd de beste locatie voor de
-                beste prijs
-            </p>
-            <img src="/img/pexels-aaronburden-2449549.jpg" alt="">
+            <div>
+                <p> Lorem ipsum dolor sit amet consectetur adm, inventore quisquam pariatur quam a similique.
+                </p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error deleniti commodi debitis consequuntur
+                    doloribus perspiciatis in doloremque? Fugit dolorum, expedita, praesentium earum rem impedit autem
+                    qui,
+                    blanditiis est doloremque eveniet
+                </p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error deleniti commodi debitis consequuntur
+                    doloribus perspiciatis in doloremque? Fugit dolorum, expedita, praesentium earum rem impedit autem
+                    qui,
+                    blanditiis est doloremque eveniet
+                </p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error deleniti commodi debitis consequuntur
+                    doloribus perspiciatis in doloremque? Fugit dolorum, expedita, praesentium earum rem impedit autem
+                    qui,
+                    blanditiis est doloremque eveniet
+                </p>
+            </div>
+                <img src="./img/pexels-chaitaastic-2031706.jpg" alt="">
         </div>
-        
+    </section>
+    <section class="kenmerken">
+        <header id="kenmerk">
+            <h2> Our features</h2>
+        </header>
+        <ul class="onzeKenmerken">
+            <li class="kenmerk">
+                
+                <h3>know</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, facilis necessitatibus voluptates
+                    illo suscipit vero? Accusantium neque aperiam illum possimus minima earum perspiciatis itaque,
+                    eveniet pariatur molestiae et quasi ea!</p>
+            </li>
+            <li class="kenmerk">
+                
+                <h3> best price</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, facilis necessitatibus voluptates
+                    illo suscipit vero? Accusantium neque aperiam illum possimus minima earum perspiciatis itaque,
+                    eveniet pariatur molestiae et quasi ea!</p>
+            </li>
+            <li class="kenmerk">
+              
+                <h3> in the area</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, facilis necessitatibus voluptates
+                    illo suscipit vero? Accusantium neque aperiam illum possimus minima earum perspiciatis itaque,
+                    eveniet pariatur molestiae et quasi ea!</p>
+            </li>
+            <li class="kenmerk">
+                <h3> Not happy Money back</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, facilis necessitatibus voluptates
+                    illo suscipit vero? Accusantium neque aperiam illum possimus minima earum perspiciatis itaque,
+                    eveniet pariatur molestiae et quasi ea!</p>
+            </li>
+        </ul>
+    </section>
+    <section class="galerij">
+        <header id="galerij">
+            <h2>Galerij</h2>
+        </header>
+        <ul class="fotos">
+            <li class="foto"><img src="./img/pexels-aaronburden-2449549.jpg" alt="">
+                <section><button class="cta">Boek Nu!</button></section>
+            </li>
+            <li class="foto"><img src="./img/pexels-chaitaastic-2031706.jpg" alt="">
+                <section><button class="cta">Boek Nu!</button></section>
+            </li>
+            <li class="foto"><img src="./img/pexels-aaronburden-2449549.jpg" alt="">
+                <section><button class="cta">Boek Nu!</button></section>
+            </li>
+            <li class="foto"><img src="./img/pexels-chaitaastic-2031706.jpg" alt="">
+                <section><button class="cta">Boek Nu!</button></section>
+            </li>
+            <li class="foto"><img src="./img/pexels-aaronburden-2449549.jpg" alt="">
+                <section><button class="cta">Boek Nu!</button></section>
+            </li>
+            <li class="foto"><img src="./img/pexels-chaitaastic-2031706.jpg" alt="">
+                <section><button class="cta">Boek Nu!</button></section>
+            </li>
+            <li class="foto"><img src="./img/pexels-aaronburden-2449549.jpg" alt="">
+                <section><button class="cta">Boek Nu!</button></section>
+            </li>
+            <li class="foto"><img src="./img/pexels-chaitaastic-2031706.jpg" alt="">
+                <section><button class="cta">Boek Nu!</button></section>
+            </li>
+            <li class="foto"><img src="./img/pexels-aaronburden-2449549.jpg" alt="">
+                <section><button class="cta">Boek Nu!</button></section>
+            </li>
+            <li class="foto"><img src="./img/pexels-chaitaastic-2031706.jpg" alt="">
+                <section><button class="cta">Boek Nu!</button></section>
+            </li>
+            <li class="foto"><img src="./img/pexels-aaronburden-2449549.jpg" alt="">
+                <section><button class="cta">Boek Nu!</button></section>
+            </li>
+            <li class="foto"><img src="./img/pexels-chaitaastic-2031706.jpg" alt="">
+                <section><button class="cta">Boek Nu!</button></section>
+            </li>
+
+        </ul>
     </section>
 </body>
 

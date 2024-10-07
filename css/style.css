@@ -1,131 +1,368 @@
-*, *::before, *::after{
+*,
+*::before,
+*::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 html {
-    font-size: 62.5%; /* 1rem = 10px */
+    font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 body {
     font-size: 2rem;
-    font-family: "Montserrat", sans-serif;
-    background: #1B262C;
+    font-family: "Roboto", sans-serif;
+    background: #3282B8;
+}
+
+a,
+a:visited,
+a:link {
+    color: #eee;
+    text-decoration: none;
 }
 
 .nav {
+    display: flex;
     width: 100%;
     background: #0F4C75;
-    display: flex;
     justify-content: space-between;
-    min-height: 7rem;
+    height: 7rem;
     align-items: center;
     color: #eee;
-    font-size: 100%;
-    padding: 1rem;
+    font-size: 120%;
+    padding: 4rem;
     text-transform: uppercase;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.nav>svg {
+    height: 4rem;
 }
 
 .list {
     display: flex;
     list-style: none;
-    gap: 4rem;
+    gap: 2rem;
 }
 
 .cta {
     width: 11rem;
-    padding: 0.5rem;
-    font-size: 70%;
-    background: #3282B8;
+    padding: 1rem;
+    font-size: 80%;
+    background: gray;
     border: none;
     color: #eee;
     border-radius: 0.5rem;
     text-transform: uppercase;
+
 }
 
 .cta:hover {
     cursor: pointer;
-    background: hsl(204, 57%, 36%);
+    background: hsl(350, 79%, 49%);
     transition: 0.2s;
 }
 
 .banner {
-    height: 100vh;
-    width: 100%;
+    height: 80vh;
     position: relative;
+
 }
 
-.banner > figure {
+
+
+.banner>figure {
     height: 100%;
     width: 100%;
-    background: linear-gradient(to bottom right, rgba(27, 38, 44, 0.4), 70%, rgba(50, 130, 184, 0.4)), url("../img/pexels-chaitaastic-2031706.jpg");
-    background-position: bottom;
-    background-size: cover;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(../img/pexels-chaitaastic-2031706.jpg);
+    background-position: center;
+    object-fit: contain;
 }
 
-.banner > figure > div {
+
+
+.banner>figure>div {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    text-align: center;
     display: flex;
     flex-direction: column;
     gap: 3rem;
     align-items: center;
     color: #eee;
-}   
+    text-align: center;
+}
+
+.logo {
+    font-size: 150%;
+    color: black;
+    padding: 2rem;
+}
 
 .heading {
-    font-family: "Edu QLD Beginner", cursive;
+    font-family: 'Schoolbell', arial, serif;
     font-size: 400%;
 }
 
 .heading2 {
-    font-family: "Edu QLD Beginner", cursive;
-    font-size: 150%;
-}
-
-.logo {
-    font-size: 250%;
-    color: #eee;
-    border: 0.5rem solid #BBE1FA;
-    border-radius: 50%;
-    padding: 1.5rem;
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-style: normal;
+    color: white;
+    font-size: 300%;
 }
 
 .over {
-    padding: 4rem;
+    padding: -1rem;
     height: 80rem;
+    border-bottom: 0.2rem solid #eee;
 }
 
-.over > header {
+.over>header {
+    margin-bottom: 5rem;
     width: 100%;
     display: flex;
     justify-content: center;
     padding: 2rem;
 }
 
-.over > header > h2 {
-    color: #eee;
-    font-family: "Edu QLD Beginner", cursive;
-    font-size: 200%;
+.over>header>h2 {
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-style: normal;
+    color: #921A40;
+    font-size: 400%;
 }
 
-.over > div {
+.over>div {
     display: flex;
     gap: 4rem;
     justify-content: center;
     height: 100%;
 }
 
-.over > div > p {
-    width: 55ch;
-    color: #eee;
+.over>div>div {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
 }
 
-.over > div > img {
-    width: 40rem;
+.over>div>div>p {
+    width: 55ch;
+    color: #921A40;
+}
+
+.over>div>img {
+    width: 60rem;
     height: 60rem;
     object-fit: cover;
+    position: relative;
+}
+
+
+.kenmerken {
+    min-height: 80vh;
+    border-bottom: 0.2rem solid #eee;
+    padding: 4rem;
+}
+
+.kenmerken>header {
+    margin-bottom: 5rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.kenmerken>header>h2 {
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-style: normal;
+    color: #921A40;
+    font-size: 400%;
+}
+
+.onzeKenmerken {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    height: 80%;
+}
+
+.kenmerk {
+    list-style: none;
+    color: #921A40;
+    width: 40%;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.kenmerk>p {
+    width: 40ch;
+    text-align: center;
+}
+
+.kenmerkIcon {
+    font-size: 180%;
+    border: 0.2rem solid #921A40;
+    padding: 1rem;
+    border-radius: 50%;
+}
+
+.galerij {
+    height: 80vh;
+}
+
+.galerij>header {
+    margin-bottom: 5rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 6rem;
+
+}
+
+.galerij>header>h2 {
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-style: normal;
+    color: #921A40;
+    font-size: 400%;
+}
+
+.fotos {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.foto {
+    width: 25%;
+    height: 40rem;
+    list-style: none;
+    position: relative;
+}
+
+.foto>section {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(rgba(256, 195, 270, 0.7), rgba(2, 2, 255, 0.2));
+    transform: scaleX(0);
+    transition: 0.8s;
+    transform-origin: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.foto:hover>section {
+    transform: scale(1);
+}
+
+.foto>section>.cta {
+    opacity: 0;
+    transition-delay: 0.8s;
+    transition-duration: 0.2s;
+}
+
+.foto:hover>section>.cta {
+    opacity: 1;
+
+}
+
+.foto>img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 75rem) {
+    body {
+        font-size: 1.6rem;
+    }
+
+    .banner {
+        height: 140rem;
+    }
+
+    .over {
+        min-height: 120rem;
+    }
+
+    .over>header {
+        height: 20%;
+    }
+
+    .over>div {
+        flex-direction: column;
+        height: 80%;
+    }
+
+    .over>div>div {
+        height: 60%;
+
+    }
+
+    .over>div>div>p {
+        width: 100%;
+        color: #921A40;
+    }
+
+    .over>div>img {
+        width: 100%;
+        height: 40%;
+        position: relative;
+    }
+
+    .kenmerk {
+        min-height: 120rem;
+    }
+
+    .kenmerk {
+        width: 100%;
+    }
+
+    .galerij {
+        height: auto;
+    }
+
+    .fotos {
+        flex-wrap: wrap;
+    }
+
+    .foto {
+        height: 20rem;
+        width: 100%;
+    }
+
+    .foto:hover>section {
+        transform: scale(1);
+    }
+    .foto:hover > section > .cta{
+        opacity: 0;
+    
+    }
+}
+
+@media screen and (max-width: 50rem) {
+    .list {
+        flex-direction: column;
+    }
 }
