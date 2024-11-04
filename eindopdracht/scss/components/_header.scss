@@ -1,21 +1,8 @@
+@use "../abstract/mixin.scss";
+
 header {
     max-width: 100vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include mixin.FlexCenter;
     padding: 10px 50px;
     background-color: red;
-    animation: colorChange 3s ease-in-out infinite alternate;
 }
-
-@keyframes colorChange {
-    0% {
-      background-color: #3498db; /* Starting color */
-    }
-    50% {
-      background-color: #e74c3c; /* Ending color */
-    }
-    100% {
-        background-color: #3498db; /* Starting color */
-    }
-  }

@@ -1,12 +1,15 @@
 @use '../abstract/colors';
+@use "../abstract/mixin.scss";
+@use "../abstract/animation";
 
 .divtober {
-    display: flex;
-    justify-content: start;
+  @include mixin.FlexCenter;
     width: 45px;
     margin: 300px;
     height: 45px;
-    animation: colorChangeBol 1s ease-in-out infinite alternate;
+    animation-name: colorChangeBol;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
     border-radius: 100%;
     box-shadow: 
     -300px -150px 0 colors.$color,
@@ -35,21 +38,3 @@
     150px 75px 0 colors.$color,
     200px 100px 0 colors.$color;
 }
-
-@keyframes colorChangeBol {
-    0% {
-      background-color: #2f424f; /* Starting color */
-      border-radius: 100%;
-
-    }
-    50% {
-      background-color: #189175; /* Ending color */
-      border-radius: 30%;
-
-    }
-    100% {
-        background-color: #2f424f; /* Starting color */
-        border-radius: 100%;
-
-    }
-  }

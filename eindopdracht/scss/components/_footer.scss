@@ -1,8 +1,7 @@
-footer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    animation: colorChange 3s ease-in-out infinite alternate;
-    padding: 25px 100px;
+@use "../abstract/mixin.scss";
 
+footer {
+    @include mixin.FlexCenter;
+    padding: 25px 100px;
+    background-color: red;
 }
